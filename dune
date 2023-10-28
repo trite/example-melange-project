@@ -9,4 +9,22 @@
 ;; If you need to consume an OCaml project from `node_modules`, this should work:
 ;; - remove the `dirs` stanza below
 ;; - add a `(subdir node_modules (dirs only_your_package))`
-(dirs :standard \ node_modules)
+
+; (dirs :standard \ node_modules)
+
+(subdir
+ node_modules
+ (dirs @davesnx)
+ (subdir
+  @davesnx/styled-ppx/css
+  (library
+   (wrapped false)
+   (name spx_css)
+   (modes melange)))
+ (subdir
+  @davesnx/styled-ppx/emotion
+  (library
+   (wrapped false)
+   (name spx_css_emotion)
+   (modes melange)
+   (libraries spx_css))))

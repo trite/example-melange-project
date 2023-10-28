@@ -3,7 +3,10 @@ module App = {
   // Melange has been installed correctly for JS bundlers to be able to find it.
   [@react.component]
   let make = () =>
-    ["Hello " ++ World.name ++ "!", "This is React!"]
+    [
+      "Hello " ++ World.name ++ "!",
+      "This is React with ReasonML via Melange!",
+    ]
     ->Belt.List.map(greeting => <h1> greeting->React.string </h1>)
     ->Belt.List.toArray
     ->React.array;
