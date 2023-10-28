@@ -14,17 +14,17 @@
 
 (subdir
  node_modules
- (dirs @davesnx)
+ (dirs)
  (subdir
-  @davesnx/styled-ppx/css
+  bs-css/src
   (library
    (wrapped false)
-   (name spx_css)
+   (name bs_css)
    (modes melange)))
  (subdir
-  @davesnx/styled-ppx/emotion
+  bs-css-emotion/src
   (library
    (wrapped false)
-   (name spx_css_emotion)
+   (name bs_css_emotion)
    (modes melange)
-   (libraries spx_css))))
+   (libraries bs_css))))

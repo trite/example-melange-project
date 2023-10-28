@@ -34,7 +34,7 @@
 (melange.emit
  (target output)
  (alias react)
- (libraries reason-react world melange.belt spx_css spx_css_emotion)
+ (libraries reason-react world melange.belt bs_css bs_css_emotion)
  (modules :standard \ hello)
  (preprocess
   (pps melange.ppx reason-react-ppx))
