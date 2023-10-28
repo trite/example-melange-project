@@ -1,4 +1,4 @@
-project_name = melange-opam-template
+project_name = example-melange-project
 
 DUNE = opam exec -- dune
 
