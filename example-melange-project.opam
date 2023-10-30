@@ -19,8 +19,10 @@ depends: [
   "odoc" {with-doc}
   "ocamlformat" {>= "0.26.1"}
   "styled-ppx" {dev}
+  "server-reason-react" {dev}
 ]
 pin-depends: [
-  [ "styled-ppx.dev" "git+https://github.com/davesnx/styled-ppx.git" ]
+  [ "styled-ppx.dev" "https://github.com/davesnx/styled-ppx.git#4686dd24b1eba7e15b02a52d68767fee93650d96" ]
+  [ "server-reason-react.dev" "https://github.com/ml-in-barcelona/server-reason-react.git#0e12e234ffbd845917891ecd4a366df86c8b0371"]
 ]
 dev-repo: "git+https://github.com/your/project.git"

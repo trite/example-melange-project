@@ -34,10 +34,15 @@
 (melange.emit
  (target output)
  (alias react)
- (libraries reason-react world melange.belt styled-ppx)
+ (libraries
+  reason-react
+  world
+  melange.belt
+  styled-ppx.bs-css
+  styled-ppx.bs-css-emotion)
  (modules :standard \ hello)
  (preprocess
-  (pps melange.ppx reason-react-ppx))
+  (pps melange.ppx reason-react-ppx styled-ppx.lib))
  (module_systems es6))
 
 (melange.emit
