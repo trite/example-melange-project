@@ -4,6 +4,7 @@
     "serve": "webpack serve --open --mode development --entry ./_build/default/src/output/src/ReactApp.js"
   },
   "dependencies": {
+    "@emotion/css": "^11.11.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
