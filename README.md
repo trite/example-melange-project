@@ -1,3 +1,22 @@
+# Current issue:
+
+Compiled with problems:
+ERROR
+Cannot find module '@emotion/css'
+webpackMissingModule@webpack:///./_build/default/src/output/node_modules/styled-ppx.bs-css-emotion/CssJs.js?:697:50
+@webpack:///./_build/default/src/output/node_modules/styled-ppx.bs-css-emotion/CssJs.js?:697:137
+./_build/default/src/output/node_modules/styled-ppx.bs-css-emotion/CssJs.js@http://localhost:8080/main.js:415:1
+__webpack_require__@http://localhost:8080/main.js:912:33
+fn@http://localhost:8080/main.js:1111:21
+@webpack:///./_build/default/src/output/src/ReactApp.js?:7:111
+./_build/default/src/output/src/ReactApp.js@http://localhost:8080/main.js:470:1
+__webpack_require__@http://localhost:8080/main.js:912:33
+@http://localhost:8080/main.js:1984:56
+@http://localhost:8080/main.js:1986:12
+ERROR in ./_build/default/src/output/node_modules/styled-ppx.bs-css-emotion/CssJs.js 3:0-36
+Module not found: Error: Can't resolve '@emotion/css' in '/home/trite/git/example-melange-project/_build/default/src/output/node_modules/styled-ppx.bs-css-emotion'
+
+
 # example-melange-project
 
 A simple project template using [Melange](https://github.com/melange-re/melange)

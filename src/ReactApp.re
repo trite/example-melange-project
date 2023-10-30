@@ -1,3 +1,5 @@
+let testStyle = [%cx "color: red"];
+
 module App = {
   // This sample forces an import of Belt.*, so that CI builds can ensure that
   // Melange has been installed correctly for JS bundlers to be able to find it.
@@ -6,6 +8,7 @@ module App = {
     [
       "Hello " ++ World.name ++ "!",
       "This is React with ReasonML via Melange!",
+      "testStyle: " ++ testStyle,
     ]
     ->Belt.List.map(greeting => <h1> greeting->React.string </h1>)
     ->Belt.List.toArray
