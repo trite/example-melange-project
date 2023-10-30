@@ -18,5 +18,9 @@ depends: [
   "dot-merlin-reader" {with-test} # todo: use with-dev-setup once opam 2.2 is out
   "odoc" {with-doc}
   "ocamlformat" {>= "0.26.1"}
+  "styled-ppx" {dev}
+]
+pin-depends: [
+  [ "styled-ppx.dev" "git+https://github.com/davesnx/styled-ppx.git" ]
 ]
 dev-repo: "git+https://github.com/your/project.git"
