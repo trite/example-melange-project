@@ -1,3 +1,8 @@
+# If having issues with Relude run:
+```
+opam pin add -y relude.dev "https://github.com/reazen/relude.git#v2"
+```
+
 # example-melange-project
 
 A simple project template using [Melange](https://github.com/melange-re/melange)

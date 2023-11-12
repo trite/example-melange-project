@@ -7,17 +7,12 @@ module App = {
     |> List.map(greeting => <h1> greeting->React.string </h1>)
     |> List.toArray
     |> React.array;
-  // ->Belt.List.map(greeting => <h1> greeting->React.string </h1>)
-  // ->Belt.List.toArray
-  // ->React.array;
 };
 
 ReactDOM.querySelector("#root")
-->(
-    fun
-    | Some(root) => ReactDOM.render(<App />, root)
-    | None =>
-      Js.Console.error(
-        "Failed to start React: couldn't find the #root element",
-      )
-  );
+|> (
+  fun
+  | Some(root) => ReactDOM.render(<App />, root)
+  | None =>
+    Js.Console.error("Failed to start React: couldn't find the #root element")
+);
