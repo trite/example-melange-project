@@ -46,6 +46,10 @@ bundle: ## Bundle the JavaScript application
 clean: ## Clean build artifacts and other generated files
 	$(DUNE) clean
 
+.PHONY: nuke
+nuke: ## Nuke installed libraries and build files from local project
+	rm -rf node_modules _build _opam
+
 .PHONY: format
 format: ## Format the codebase with ocamlformat
 	$(DUNE) build @fmt --auto-promote

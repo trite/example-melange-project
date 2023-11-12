@@ -18,10 +18,10 @@ depends: [
   "dot-merlin-reader" {with-test} # todo: use with-dev-setup once opam 2.2 is out
   "odoc" {with-doc}
   "ocamlformat" {>= "0.26.1"}
-  "relude" {dev}
+  "relude" {>= "2.0.0"}
 ]
 pin-depends: [
   [ "relude.dev" "git+https://github.com/reazen/relude.git#v2" ]
-  [ "bastet.dev" "git+https://github.com/johnhaley81/bastet.git#6c8f53a9da55254691df49bddf96b279b38be204" ]
+  # [ "bastet.2.0.0" "https://github.com/johnhaley81/bastet.git#6c8f53a9da55254691df49bddf96b279b38be204" ]
 ]
 dev-repo: "git+https://github.com/your/project.git"
